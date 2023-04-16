@@ -1,0 +1,190 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(200, 154, 243);
+}
+
+.stretch-card .card {
+   width: 45vw;
+   min-width: 100%;
+}
+
+@media (max-width:991.98px) {
+   .padding {
+      padding: 1.5rem;
+   }
+}
+
+@media (max-width:767.98px) {
+   .padding {
+      padding: 1rem;
+   }
+}
+
+
+.padding {
+   padding: 5rem;
+}
+
+
+.card {
+   border: 0;
+   border-radius: 2px;
+}
+
+.card-weather {
+   background: #e1ecff;
+   background-image: linear-gradient(to left bottom, #d6eef6, #dff0fa, #e7f3fc, #eff6fe, #f6f9ff);
+}
+
+.card {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   min-width: 0;
+   word-wrap: break-word;
+   background-color: #fff;
+   background-clip: border-box;
+   border: 1px solid rgba(0, 0, 0, 0.125);
+   border-radius: 0.25rem;
+}
+
+
+.card-weather .card-body:first-child {
+   background: url(images/lonely-meadow-with-sky-background.jpg) no-repeat center;
+   /* background-color: rgb(32, 98, 156); */
+   background-size: cover;
+}
+
+.card .card-body {
+   padding: 1.88rem 1.81rem;
+}
+
+.card-body {
+   flex: 1 1 auto;
+   padding: 1.25rem;
+}
+
+.card-weather .weather-date-location {
+   padding: 0 0 38px;
+}
+
+
+h3 {
+   font-size: 1.56rem;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: "Poppins", sans-serif;
+   font-weight: 500;
+}
+
+p {
+   font-size: 13px;
+}
+
+.text-gray{
+   color: #3d2121;
+}
+
+.card-weather .weather-data {
+   padding: 0 0 4.75rem;
+}
+
+
+.display-3 {
+   font-size: 2.5rem;
+}
+
+.card-weather .card-body {
+   background: #ffffff;
+}
+
+.card-weather .weekly-weather {
+   background: #ffffff;
+   overflow-x: auto;
+}
+
+.card-weather .weekly-weather .weekly-weather-item {
+   flex: 0 0 14.28%;
+   border-right: 1px solid #f2f2f2;
+   padding: 1rem;
+   padding-right: 4rem;
+   padding-left: 4rem;
+   text-align: center;
+}
+.weekly-weather {
+   width: 45vw
+}
+
+.mb-0,
+.my-0 {
+   margin-bottom: 0 !important;
+}
+
+.card-weather .weekly-weather .weekly-weather-item i {
+   font-size: 1.2rem;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+.height {
+   height: 10vh;
+}
+
+
+.search {
+   width: 43.5vw;
+   height: 6.5vh;
+   position: relative;
+   box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+}
+
+.search input {
+   height: 60px;
+   text-indent: 25px;
+   border: 2px solid #d6d4d4;
+}
+
+
+.search input:focus {
+   box-shadow: none;
+   border: 2px solid blue;
+}
+
+.search .fa-search {
+   position: absolute;
+   top: 20px;
+   left: 16px;
+
+}
+
+.search button {
+   background-color: transparent;
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   height: 50px;
+   width: 50px; 
+   border: none;
+
+}
+
+.w-icon {
+   height: 50px;
+   width: 50px;
+}

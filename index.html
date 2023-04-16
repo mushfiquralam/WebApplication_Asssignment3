@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/2d5c01f986.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <div id="page-content">
+        <div class="padding">
+            <div class="row container">
+                <div class="col-lg-8 grid-margin stretch-card">
+                    <div class="container">
+
+                        <div class="row height">
+
+                            <div class="col-md-8">
+
+                                <div class="search">
+
+                                    <input type="text" class="form-control" id="sCityName" placeholder="City Name">
+                                    <button class="button"><i class="fa fa-search" onclick="getDataonClick()"
+                                            alt="Search"></i></button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--weather card-->
+                    <div class="card card-weather">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="weather-date-location">
+                                        <h2>
+                                            <span id="weekn1">Friday</span>
+                                            <span id="cityname"></span>
+                                        </h2>
+                                        <h5 class="text-gray">
+                                            <span id="addDate">25 Mar, 2023</span>
+                                        </h5>
+                                        <h5 class="time">
+                                            <span id="addTime">00:12 AM</span>
+                                        </h5>
+                                        <h5><span id="weather-location">Sydney</span></h5>
+                                    </div>
+                                    <div class="weather-data">
+                                        <div class="mr-auto">
+                                            <h2 class="display-3" id="day1"> 25&#176;C</h2>
+                                            <img src="http://openweathermap.org/img/wn/10d@2x.png" id="img1" alt="icon">
+                                            <h4><span id="weather1">Cloudy</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>
+                                        <span id="feels">
+                                            Feels like: 27&#176;C
+                                        </span>
+                                    </h4>
+                                    <h4>
+                                        <span id="humidity">
+                                            Humidity: 20%
+                                        </span>
+                                    </h4>
+                                    <h4>
+                                        <span id="day1windSpeed">
+                                            Wind Speed: 20m/s
+                                        </span>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                            </div>
+
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="d-flex weekly-weather">
+
+                                <div class="weekly-weather-item">
+                                    <h4 class="mb-1">
+                                        <span id="weekn2">
+                                            Sat
+                                        </span>
+                                    </h4>
+                                    <img src="http://openweathermap.org/img/wn/10d@2x.png" id="img2" alt="weather icon"
+                                        class="w-icon">
+                                    <h5 class="mb-0">
+                                        <span id="day2">
+                                            32&#176;C
+                                        </span>
+                                        <br>
+                                        <span id="weather2">Cloudy</span>
+                                    </h5>
+                                </div>
+                                <div class="weekly-weather-item">
+                                    <h4 class="mb-1">
+                                        <span id="weekn3">
+                                            Sun
+                                        </span>
+                                    </h4>
+                                    <img src="http://openweathermap.org/img/wn/10d@2x.png" id="img3" alt="weather icon"
+                                        class="w-icon">
+                                    <h5 class="mb-0">
+                                        <span id="day3">
+                                            32&#176;C
+                                        </span>
+                                        <br>
+                                        <span id="weather3">Cloudy</span>
+                                    </h5>
+                                </div>
+                                <div class="weekly-weather-item">
+                                    <h4 class="mb-1">
+                                        <span id="weekn4">
+                                            Mon
+                                        </span>
+                                    </h4>
+                                    <img src="http://openweathermap.org/img/wn/10d@2x.png" id="img4" alt="weather icon"
+                                        class="w-icon">
+                                    <h5 class="mb-0">
+                                        <span id="day4">
+                                            32&#176;C
+                                        </span>
+                                        <br>
+                                        <span id="weather4">Cloudy</span>
+                                    </h5>
+                                </div>
+                                <div class="weekly-weather-item">
+                                    <h4 class="mb-1">
+                                        <span id="weekn5">
+                                            Tue
+                                        </span>
+                                    </h4>
+                                    <img src="http://openweathermap.org/img/wn/10d@2x.png" id="img5" alt="weather icon"
+                                        class="w-icon">
+                                    <h5 class="mb-0">
+                                        <span id="day5">
+                                            32&#176;C
+                                        </span>
+                                        <br>
+                                        <span id="weather5">Cloudy</span>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--weather card ends-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
